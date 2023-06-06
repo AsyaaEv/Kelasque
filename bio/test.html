@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wraper">
+            <div class="pembungkus">
+                <div class="bg" style="background-image: url('../foto1.jpg');">
+                    <div class="profile">
+                        <div class="pp">
+                            <div class="foto">
+                                <img src="../img.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="div-pp">
+                            <i class="icon-pp" data-feather="more-horizontal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h3>Anggun Rasya Evaldo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti explicabo recusandae,
+                        nobis
+                        dolorum unde iure alias dignissimos distinctio quos perferendis molestias. Ad ratione facere
+                        doloribus
+                        quaerat saepe adipisci, hic, fuga harum sed incidunt possimus provident, repellat nihil! Quaerat
+                        impedit
+                        vero neque a natus, corporis placeat obcaecati aliquid voluptatum dolores dolor eius,
+                        consequatur id
+                        consectetur ut numquam? Enim, placeat ratione officia est voluptas cum sit earum harum amet,
+                        eos,
+                        velit
+                        facilis. Possimus magni, unde iure quas culpa cupiditate, velit mollitia quisquam soluta hic
+                        doloribus
+                        voluptatum totam blanditiis provident nemo molestias qui tenetur dolorem ea dicta, iusto quam
+                        eum
+                        omnis
+                        illum.</p>
+                </div>
+                <div class="biodata">
+                    <div class="header">
+                        <h2>Biodata</h2>
+                    </div>
+                    <div class="kiri">
+                        <h3>Nama Lengkap </h3>
+                        <h3>Umur </h3>
+                        <h3>Tinggi Badan </h3>
+                        <h3>Berat Badan </h3>
+                        <h3>Cita cita </h3>
+                    </div>
+                    <div class="kanan">
+                        <h3>Anggun Rasya Evaldo</h3>
+                        <h3>16 Tahun</h3>
+                        <h3>165 CM</h3>
+                        <h3>50 KG</h3>
+                        <h3>Progammer</h3>
+                    </div>
+                </div>
+                <div class="sosmed">
+                    <div class="sosmed-wrapper">
+                        <div class="visit">
+                            <h3>Visit their platforms:</h3>
+                        </div>
+                        <div class="logo-class">
+                            <div class="logo">
+                                <a href="#"><i class="lni lni-instagram-original i-icon"></i></a>
+                                <a href="#"><i class="lni lni-tiktok-alt i-icon"></i></a>
+                                <a href="#"><i class="lni lni-twitter i-icon"></i></a>
+                                <a href="#"><i class="lni lni-telegram-original i-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pembatas">
+            <h3>Postingan</h3>
+        </div>
+        <div class="posting hidden">
+            <div class="wrapper">
+                <div class="post">
+                    <div class="fotoPost"><img src="../foto2.jpg" alt=""></div>
+                </div>
+                <div class="caption">
+                    <div class="like">
+                        <i class="fa fa-heart" id="love"></i><span id="like">0</span>
+                        <i class="icon" data-feather="more-vertical" id="toggle-btn" onclick="toggleDropdown()"></i>
+                        <div id="dropdown" class="dropdown-content">
+                            <a href="#">Laporkan</a>
+                            <a href="#">Bagikan</a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates. Praesentium quibusdam
+                        labore aperiam laudantium aliquam consequuntur laboriosam quisquam eveniet in veniam impedit
+                        quas, veritatis perferendis at eos iste, fugit vel ad sit suscipit dolore placeat ipsa? Esse
+                        adipisci soluta facere ipsa quidem, fuga odit quia modi nostrum quisquam dolore?</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn-back">
+            <button onclick="kembali()">Kembali</button>
+        </div>
+    </div>
+
+    <script>
+        feather.replace()
+
+        const observer = new IntersectionObserver((entries) =>{
+            entries.forEach((entry) => {
+                console.log(entry)
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                } else {
+                    entry.target.classList.remove('show')
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        function kembali(){
+            window.location.replace('../member/');
+        }
+    </script>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&display=swap');
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <title>KelasQue | Login</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-[#f9f9f9] flex justify-center items-center">
+        <div class="w-full h-screen bg-[#12294c] shadow-lg flex justify-center items-center flex-wrap md:w-[30rem] md:h-[35rem] md:rounded-xl">
+            <div class="w-[100%] h-[35rem]">
+                <div class="w-full text-center md:mt-16">
+                    <h3 class="text-white font-bold text-[2.5rem]">Kelas<span class="text-[#81172c] italic text-[2.5rem]">Que</span></h3>
+                    <p class="text-white opacity-50">Login</p>
+                </div>
+                <div class="text-red-500 absolute ml-[6rem] mt-3 bg-[#f9f9f9] rounded p-1 mb-2 w-[17.8rem] hidden">
+                    <p>Erorr: Lorem ipsum dolor sit amet.</p>
+                </div>
+                <form action="">
+                    <div class="flex flex-col justify-center items-center w-full mt-[3rem]">
+                        <i class="lni lni-user absolute mb-[5rem] mr-[16rem] text-2xl max-[340px]:mr-[14rem]"></i><input type="number" class="w-[19rem] h-[4rem] mb-4 rounded-[10px] px-[3rem] max-[340px]:w-[17rem]" placeholder="ID" required>
+                        <i class="lni lni-lock-alt absolute mt-[5rem] mr-[16rem] text-2xl max-[340px]:mr-[14rem]"></i><input type="number" class="w-[19rem] h-[4rem] rounded-[10px] px-[3rem] max-[340px]:w-[17rem]" placeholder="Token" required>
+                    </div>
+                    <div class="flex justify-center items-center mt-[3rem]">
+                        <button class="bg-white px-[2rem] py-[1rem] rounded-[10px] hover:bg-gray-300 hover:text-white transition ease delay-100 font-bold" type="submit"><a href="">Masuk</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

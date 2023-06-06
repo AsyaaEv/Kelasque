@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    animation: grow 1s ease;
+}
+
+@keyframes grow{
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container .wraper {
+    padding-top: 1rem;
+}
+
+.container .pembungkus {
+    margin: 0 4rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container .bg {
+    width: 100%;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.container .pembungkus .bg .profile {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .profile .pp {
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container .profile .pp .foto {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .profile .pp .foto img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.container .profile .div-pp {
+    display: none;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: all .2s ease-in-out;
+}
+
+.container .profile .div-pp:hover {
+    transform: scale(1);
+    transition: all .2s ease-in-out;
+}
+
+.container .bio {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    font-weight: 300;
+    color: #12294a;
+}
+
+.container .bio p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.container .pembatas {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    color: #12294a;
+}
+
+.container .posting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .posting .wrapper {
+    background-color: #12294a;
+    width: 85%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.container .posting .post {
+    width: 45rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    ;
+}
+
+.container .posting .post .fotoPost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container .posting .post .fotoPost img {
+    width: 95%;
+    height: 99%;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container .posting .caption {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 16px;
+    padding-right: 1rem;
+    color: white;
+}
+
+.container .posting .like {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .posting .like i {
+    color: white;
+    font-size: 1.7rem;
+    transition: all .2s ease-in-out;
+    align-self: center;
+}
+
+.container .posting .like span {
+    font-size: 1.5rem;
+    position: absolute;
+    margin-left: 2.2rem;
+    align-self: center;
+}
+
+.container .posting .like .icon {
+    transition: all .2s ease-in-out;
+}
+
+.container .posting .like i:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;
+}
+
+.container .posting .like .icon:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 11%;
+    background-color: white;
+    opacity: 90%;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.dropdown-content a:hover {
+    border-radius: 10px;
+    transform: scale(1);
+    background-color: rgb(241, 241, 241);
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.container .biodata {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-top: 0.01rem solid #12294a;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .biodata .header {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    color: #12294a;
+}
+
+.container .biodata .kiri {
+    margin-left: 1rem;
+}
+
+.container .biodata .kanan {
+    margin-left: 15rem;
+    opacity: 100%;
+    color: #12294a;
+}
+
+.container .kanan h3 {
+    margin-bottom: 1rem;
+}
+
+.container .biodata h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.container .biodata .kiri h3 {
+    opacity: 50%;
+    margin-bottom: 1rem;
+}
+
+.container .sosmed {
+    width: 100%;
+    display: flex;
+}
+
+.container .sosmed-wrapper {
+    width: 20rem;
+    height: 8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #12294a;
+}
+
+.container .sosmed .visit {
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.container .sosmed .logo-class .logo {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .sosmed .logo-class .logo a {
+    text-decoration: none;
+    color: #12294a;
+}
+
+.container .sosmed .logo-class .logo .i-icon {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+}
+
+.container .sosmed .logo-class .logo .i-icon:hover {
+    cursor: pointer;
+}
+
+.container .btn-back{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btn-back button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: all .2s ease;
+    color: black;
+}
+
+.container .btn-back button:hover{
+    background-color: #12294a;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-height: 769px) {
+    .container {
+        height: 100vh;
+    }
+
+    .dropdown-content {
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .pembungkus {
+        margin: 0 2rem;
+    }
+
+    .container .pembungkus .bg .profile {
+        justify-content: center;
+    }
+
+    .container .pembungkus .bg .profile .pp {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .container .pembungkus .bg .profile .pp .foto img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .container .bio {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container .bio h3 {
+        text-align: center;
+    }
+
+    .container .bio p {
+        font-size: 60%;
+    }
+
+    .container .profile .div-pp {
+        display: none;
+    }
+
+    .container .pembatas {
+        margin-left: 2.5rem;
+    }
+
+    .container .posting {
+        flex-wrap: wrap;
+    }
+
+    .container .posting .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .container .posting .post {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .container .posting .caption {
+        width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+        font-size: 75%;
+    }
+
+    .container .posting .like span,
+    .container .posting .like .icon,
+    .container .posting .like i {
+        font-size: 1.2rem;
+    }
+
+    .container .posting .like span {
+        margin-left: 1.5rem;
+    }
+
+    .dropdown-content {
+        right: 13%;
+    }
+
+    .container .sosmed {
+        transform: scale(0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .biodata .kanan {
+        margin-left: 10rem;
+    }
+}
+
+
+
+@media screen and (max-width: 620px) {
+    .dropdown-content {
+        right: 15%;
+    }
+
+    .container .biodata .kanan {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container .pembungkus .bg .profile .pp {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .container .pembungkus .bg .profile .pp .foto img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .container .bio h3 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .container .bio p {
+        font-size: 0.6rem;
+    }
+
+    .container .posting .caption {
+        font-size: 65%;
+    }
+
+    .container .pembatas {
+        font-size: 80%;
+        margin-left: 1rem;
+    }
+
+    .dropdown-content {
+        right: 20%;
+    }
+
+    .container .biodata {
+        font-size: 0.5rem;
+    }
+
+    .container .biodata .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .container .sosmed {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width:374px) {}
+
+@media screen and (max-width: 320px) {
+
+    .container .posting .caption {
+        font-size: 55%;
+    }
+}
+
+.hidden{
+    transform: translateX(-20%);
+    transition: all 1s ease;
+}
+
+.show{
+    transform: translateX(0);
+}
